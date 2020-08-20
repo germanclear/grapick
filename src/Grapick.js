@@ -135,7 +135,7 @@ export default class Grapick extends EventEmitter {
     }
 
     const style = this.sandEl.style;
-    const values = [value, ...this.getPrefixedValues(type, angle)];
+    const values = [...this.getPrefixedValues(type, angle), value];
     let val;
 
     for (let i = 0; i < values.length; i++) {
